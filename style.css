@@ -1,0 +1,159 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #f31559;
+  color: #f0f0f0;
+}
+
+nav {
+  background-color: #272222;
+}
+
+.btn-open {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 20% 30% 20% 30% / 30% 20% 30% 20%;
+  background: linear-gradient(to bottom, #be4bdb 5%, #f783ac 95%);
+  color: floralwhite;
+  text-decoration: none;
+}
+
+.btn-open:active {
+  background: linear-gradient(to top, #be4bdb 5%, #f783ac 95%);
+  transform: scale(0.95);
+}
+
+#projects {
+  background-color: #3aa6b9;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  opacity: 0.8 !important;
+}
+
+.card-img-top:hover {
+  transform: scaleX(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#about {
+  background-color: #3aa6b9;
+}
+
+footer {
+  background-color: #272222;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li:hover {
+  opacity: 0.8;
+}
+
+.audio-container-2 {
+  position: relative;
+  margin: 100px 5% auto 5%;
+  width: auto;
+  height: auto;
+  background: #fff;
+}
+.audio-container-2::before {
+  position: absolute;
+  content: '';
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to left, #007db5, #ff8a00);
+  z-index: -1;
+}
+
+.audio-title {
+  position: absolute;
+  top: -15px;
+  right: 5%;
+  padding: 0 5px;
+  margin: 0;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+audio {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Style for WebKit browsers (Chrome, Safari) */
+  background: transparent;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Style for WebKit browsers (Chrome, Safari) */
+audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for WebKit browsers (Chrome, Safari) */
+audio::-webkit-media-slider {
+  background-color: #3498db; /* Warna latar belakang slider */
+  height: 8px; /* Tinggi slider */
+  border-radius: 4px; /* Radius sudut slider */
+}
+
+/* Style for WebKit browsers (Chrome, Safari) */
+audio::-webkit-media-slider-thumb {
+  background-color: #fff; /* Warna thumb slider */
+  border: 2px solid #3498db; /* Border thumb slider */
+  width: 16px; /* Lebar thumb slider */
+  height: 16px; /* Tinggi thumb slider */
+  margin-top: -4px; /* Menyesuaikan posisi thumb */
+}
+
+/* Style for input */
+input {
+  border: 1px solid #3498db; /* Warna border input */
+  border-radius: 4px; /* Radius sudut input */
+  padding: 8px; /* Padding input */
+  margin-top: 10px; /* Jarak antara input dan audio */
+  width: 100%; /* Lebar input */
+  box-sizing: border-box; /* Menyertakan padding dan border dalam lebar input */
+}
